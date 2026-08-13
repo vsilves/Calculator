@@ -3,4 +3,4 @@ This repository holds the US FDA validated and DOD approved dairy and fluid egg 
 
 Page served at:
 
-[https://vsilves.github.io/Calculator/(https://vsilves.github.io/Calculator)
+[https://vsilves.github.io/Calculator](https://vsilves.github.io/Calculator)
