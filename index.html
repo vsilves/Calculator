@@ -545,7 +545,7 @@
 		// FUNCTIONS TO DRAW THE GRAPH ON THE HTML CANVAS
 
 		// Configuration
-		title_color = 'red';			// graph title color
+		title_color = 'red';			    // graph title color
 		first_curve_color = 'red';			// regulatory curve color: pasteurization or UP/sterilization
 		second_curve_color = 'red';			// UP commercial sterility curve
 		nz_curve_color = 'green';			// Australia/New Zealand pasteurization curve and acceptable dot color
@@ -650,12 +650,12 @@
 					//c.fillStyle = 'red'; // needed to set text color since red dots are drawn after text
 					switch(prod) {
 						case 'eggWhites':
-						drawText(minX+rangeX/2,maxY,'egg, whites (plain)','center','top',title_color);
+						drawText(minX+rangeX/2,maxY,'egg, whites, plain (SE negative)','center','top',title_color);
 						drawCircle(3.5*60,56.67,0.1,regulatory_point_color);
 						drawCircle(6.2*60,55.56,0.1,regulatory_point_color);	
 						break;
 						case 'eggWhole':
-						drawText(minX+rangeX/2,maxY,'egg, whole (plain)','center','top',title_color);
+						drawText(minX+rangeX/2,maxY,'egg, whole, plain','center','top',title_color);
 						drawCircle(3.5*60,60,0.1,regulatory_point_color);
 						break;
 						case 'eggBlends':
@@ -669,7 +669,7 @@
 							drawCircle(6.2*60,60,0.1,regulatory_point_color);
 							break;
 						case 'eggYolk':
-						drawText(minX+rangeX/2,maxY,'egg, yolk, (plain)','center','top',title_color);
+						drawText(minX+rangeX/2,maxY,'egg, yolk, plain','center','top',title_color);
 						drawCircle(3.5*60,61.11,0.1,regulatory_point_color);
 						drawCircle(6.2*60,60,0.1,regulatory_point_color);
 						break;
@@ -693,6 +693,118 @@
 						drawCircle(3.5*60,63.33,0.1,regulatory_point_color);
 						drawCircle(6.2*60,62.22,0.1,regulatory_point_color);
 						break;
+                        case 'eggNewWhites78':
+                        drawText(minX+rangeX/2,maxY,'egg, whites, plain, pH 7.8 (5.7-log reduction)','center','top',title_color);
+                        drawCircle(32.16 * 60, 55.56, 0.1, regulatory_point_color);
+                        drawCircle(27.02 * 60, 55.83, 0.1, regulatory_point_color);
+                        drawCircle(22.56 * 60, 56.11, 0.1, regulatory_point_color);
+                        drawCircle(18.71 * 60, 56.39, 0.1, regulatory_point_color);
+                        drawCircle(15.43 * 60, 56.67, 0.1, regulatory_point_color);
+                        drawCircle(12.64 * 60, 56.94, 0.1, regulatory_point_color);
+                        drawCircle(10.30 * 60, 57.22, 0.1, regulatory_point_color);
+                        drawCircle(7.11 * 60,  57.50, 0.1, regulatory_point_color);
+                        drawCircle(5.65 * 60,  57.78, 0.1, regulatory_point_color);
+                        drawCircle(4.47 * 60,  58.06, 0.1, regulatory_point_color);
+                        drawCircle(3.51 * 60,  58.33, 0.1, regulatory_point_color);
+                        drawCircle(2.75 * 60,  58.61, 0.1, regulatory_point_color);
+                        drawCircle(2.15 * 60,  58.89, 0.1, regulatory_point_color);
+                        drawCircle(1.67 * 60,  59.17, 0.1, regulatory_point_color);
+                        drawCircle(78,         59.44, 0.1, regulatory_point_color);
+                        drawCircle(60,         59.72, 0.1, regulatory_point_color);
+                        drawCircle(47,         60.00, 0.1, regulatory_point_color);
+                        drawCircle(36,         60.28, 0.1, regulatory_point_color);
+                        drawCircle(27,         60.56, 0.1, regulatory_point_color);
+                        drawCircle(21,         60.83, 0.1, regulatory_point_color);
+                        break;
+                        case 'eggNewWhites82':
+                        drawText(minX+rangeX/2,maxY,'egg, whites, plain, pH 8.2 (5.7-log reduction)','center','top',title_color);
+                        drawCircle(36.70 * 60, 55.00, 0.1, regulatory_point_color);
+                        drawCircle(31.07 * 60, 55.28, 0.1, regulatory_point_color);
+                        drawCircle(26.12 * 60, 55.56, 0.1, regulatory_point_color);
+                        drawCircle(21.80 * 60, 55.83, 0.1, regulatory_point_color);
+                        drawCircle(18.08 * 60, 56.11, 0.1, regulatory_point_color);
+                        drawCircle(14.88 * 60, 56.39, 0.1, regulatory_point_color);
+                        drawCircle(12.18 * 60, 56.67, 0.1, regulatory_point_color);
+                        drawCircle(9.90 * 60,  56.94, 0.1, regulatory_point_color);
+                        drawCircle(8.00 * 60,  57.22, 0.1, regulatory_point_color);
+                        drawCircle(6.42 * 60,  57.50, 0.1, regulatory_point_color);
+                        drawCircle(5.13 * 60,  57.78, 0.1, regulatory_point_color);
+                        drawCircle(4.08 * 60,  58.06, 0.1, regulatory_point_color);
+                        drawCircle(3.22 * 60,  58.33, 0.1, regulatory_point_color);
+                        drawCircle(2.54 * 60,  58.61, 0.1, regulatory_point_color);
+                        drawCircle(1.99 * 60,  58.89, 0.1, regulatory_point_color);
+                        drawCircle(93,         59.17, 0.1, regulatory_point_color);
+                        drawCircle(72,         59.44, 0.1, regulatory_point_color);
+                        drawCircle(56,         59.72, 0.1, regulatory_point_color);
+                        drawCircle(44,         60.00, 0.1, regulatory_point_color);
+                        drawCircle(33,         60.28, 0.1, regulatory_point_color);
+                        drawCircle(26,         60.56, 0.1, regulatory_point_color);
+                        drawCircle(20,         60.83, 0.1, regulatory_point_color);
+                        break;
+                        case 'eggNewWhites88':
+                        drawText(minX+rangeX/2,maxY,'egg, whites, plain, pH 8.8 (5.7-log reduction)','center','top',title_color);
+                        drawCircle(38.32 * 60, 54.44, 0.1, regulatory_point_color);
+                        drawCircle(33.27 * 60, 54.72, 0.1, regulatory_point_color);
+                        drawCircle(28.72 * 60, 55.00, 0.1, regulatory_point_color);
+                        drawCircle(24.62 * 60, 55.28, 0.1, regulatory_point_color);
+                        drawCircle(20.95 * 60, 55.56, 0.1, regulatory_point_color);
+                        drawCircle(17.69 * 60, 55.83, 0.1, regulatory_point_color);
+                        drawCircle(14.82 * 60, 56.11, 0.1, regulatory_point_color);
+                        drawCircle(12.33 * 60, 56.39, 0.1, regulatory_point_color);
+                        drawCircle(10.19 * 60, 56.67, 0.1, regulatory_point_color);
+                        drawCircle(8.36 * 60,  56.94, 0.1, regulatory_point_color);
+                        drawCircle(6.81 * 60,  57.22, 0.1, regulatory_point_color);
+                        drawCircle(5.52 * 60,  57.50, 0.1, regulatory_point_color);
+                        drawCircle(4.44 * 60,  57.78, 0.1, regulatory_point_color);
+                        drawCircle(3.56 * 60,  58.06, 0.1, regulatory_point_color);
+                        drawCircle(2.83 * 60,  58.33, 0.1, regulatory_point_color);
+                        drawCircle(2.24 * 60,  58.61, 0.1, regulatory_point_color);
+                        drawCircle(1.77 * 60,  58.89, 0.1, regulatory_point_color);
+                        drawCircle(84,         59.17, 0.1, regulatory_point_color);
+                        drawCircle(65,         59.44, 0.1, regulatory_point_color);
+                        drawCircle(51,         59.72, 0.1, regulatory_point_color);
+                        drawCircle(39,         60.00, 0.1, regulatory_point_color);
+                        drawCircle(31,         60.28, 0.1, regulatory_point_color);
+                        drawCircle(24,         60.56, 0.1, regulatory_point_color);
+                        drawCircle(18,         60.83, 0.1, regulatory_point_color);
+                        break;
+                        case 'eggNewWhites93':
+                        drawText(minX+rangeX/2,maxY,'egg, whites, plain, pH 9.3 (5.7-log reduction)','center','top',title_color);
+                        drawCircle(36.45 * 60, 53.06, 0.1, regulatory_point_color);
+                        drawCircle(31.26 * 60, 53.33, 0.1, regulatory_point_color);
+                        drawCircle(26.81 * 60, 53.61, 0.1, regulatory_point_color);
+                        drawCircle(23.00 * 60, 53.89, 0.1, regulatory_point_color);
+                        drawCircle(19.72 * 60, 54.17, 0.1, regulatory_point_color);
+                        drawCircle(16.92 * 60, 54.44, 0.1, regulatory_point_color);
+                        drawCircle(14.91 * 60, 54.72, 0.1, regulatory_point_color);
+                        drawCircle(12.45 * 60, 55.00, 0.1, regulatory_point_color);
+                        drawCircle(10.68 * 60, 55.28, 0.1, regulatory_point_color);
+                        drawCircle(9.16 * 60,  55.56, 0.1, regulatory_point_color);
+                        drawCircle(7.85 * 60,  55.83, 0.1, regulatory_point_color);
+                        drawCircle(6.74 * 60,  56.11, 0.1, regulatory_point_color);
+                        drawCircle(5.78 * 60,  56.39, 0.1, regulatory_point_color);
+                        drawCircle(4.96 * 60,  56.67, 0.1, regulatory_point_color);
+                        drawCircle(4.25 * 60,  56.94, 0.1, regulatory_point_color);
+                        drawCircle(3.65 * 60,  57.22, 0.1, regulatory_point_color);
+                        drawCircle(3.13 * 60,  57.50, 0.1, regulatory_point_color);
+                        drawCircle(2.68 * 60,  57.78, 0.1, regulatory_point_color);
+                        drawCircle(2.30 * 60,  58.06, 0.1, regulatory_point_color);
+                        drawCircle(1.98 * 60,  58.33, 0.1, regulatory_point_color);
+                        drawCircle(1.69 * 60,  58.61, 0.1, regulatory_point_color);
+                        drawCircle(87,         58.89, 0.1, regulatory_point_color);
+                        drawCircle(75,         59.17, 0.1, regulatory_point_color);
+                        drawCircle(65,         59.44, 0.1, regulatory_point_color);
+                        drawCircle(56,         59.72, 0.1, regulatory_point_color);
+                        drawCircle(48,         60.00, 0.1, regulatory_point_color);
+                        drawCircle(41,         60.28, 0.1, regulatory_point_color);
+                        drawCircle(35,         60.56, 0.1, regulatory_point_color);
+                        drawCircle(30,         60.83, 0.1, regulatory_point_color);
+                        drawCircle(26,         61.11, 0.1, regulatory_point_color);
+                        drawCircle(23,         61.39, 0.1, regulatory_point_color);
+                        drawCircle(19,         61.67, 0.1, regulatory_point_color);
+                        drawCircle(17,         61.94, 0.1, regulatory_point_color);
+                        drawCircle(14,         62.22, 0.1, regulatory_point_color);
+                        break;
 					}
 					break;
 			}
@@ -1490,6 +1602,10 @@
 			case 'eggWholeSalt':  prodKind='egg';		fat='0';		break;
 			case 'eggYolkSugar':  prodKind='egg';		fat='0';		break;
 			case 'eggYolkSalt':	  prodKind='egg';		fat='0';		break;
+            case 'eggNewWhites78':prodKind='egg';       fat='0';        break;
+            case 'eggNewWhites82':prodKind='egg';       fat='0';        break;
+            case 'eggNewWhites88':prodKind='egg';       fat='0';        break;
+            case 'eggNewWhites93':prodKind='egg';       fat='0';        break;
 		};
 		document.getElementById("fatI").value = fat;
 		
@@ -1707,6 +1823,153 @@
 					case 'eggWholeSalt':  
 					case 'eggYolkSugar':  
 					case 'eggYolkSalt':	  Tmin0=(114-8*Math.log(t/60/3.5)/Math.LN10)*5/9; break;
+                    case 'eggNewWhites78': {
+                        // FSIS limits: 141.5°F (21s) to 132.0°F (32.16 min = 1929.6s)
+                        if (t < 21 || t > 1929.6) {
+                            Tmin0 = Infinity;
+                            break;
+                        }
+                        // Valid regulatory data points: [time_in_seconds, temp_in_celsius]
+                        const pts = [
+                         [21, 60.83], [27, 60.56], [36, 60.28], [47, 60.00], [60, 59.72],
+                         [78, 59.44], [100.2, 59.17], [129, 58.89], [165, 58.61], [210.6, 58.33],
+                         [268.2, 58.06], [339, 57.78], [426.6, 57.50], [618, 57.22], [758.4, 56.94],
+                         [925.8, 56.67], [1123.8, 56.39], [1353.6, 56.11], [1621.2, 55.83], [1929.6, 55.56]
+                        ];
+                        // Find the bounding interval for log-linear interpolation
+                        const idx = pts.findIndex(p => t <= p[0]);
+                        if (idx === 0) {
+                            Tmin0 = pts[0][1];
+                        } else {
+                            const [t1, T1] = pts[idx - 1];
+                            const [t2, T2] = pts[idx];
+                            Tmin0 = T1 + (T2 - T1) * Math.log(t / t1) / Math.log(t2 / t1);
+                        }
+                        break;
+                    }
+                    case 'eggNewWhites82': {
+                        // FSIS limits: 141.5°F (20s) to 131.0°F (36.70 min = 2202s)
+                        if (t < 20 || t > 2202) {
+                            Tmin0 = Infinity;
+                            break;
+                        }
+                        // Valid regulatory data points from 141.5°F down to 133.5°F: [time_in_seconds, temp_in_celsius]
+                        const pts = [
+                         [20, 60.83], [26, 60.56], [33, 60.28], [44, 60.00], [56, 59.72],
+                         [72, 59.44], [93, 59.17], [119.4, 58.89], [152.4, 58.61], [193.2, 58.33],
+                         [244.8, 58.06], [307.8, 57.78], [385.2, 57.50], [480, 57.22], [594, 56.94],
+                         [730.8, 56.67], [892.8, 56.39], [1084.8, 56.11], [1312.2, 55.83], [1567.2, 55.56],
+                         [1864.2, 55.28], [2202, 55.00]
+                        ];
+                        // Find the bounding interval for log-linear interpolation
+                        const idx = pts.findIndex(p => t <= p[0]);
+                        if (idx === 0) {
+                            Tmin0 = pts[0][1];
+                        } else {
+                            const [t1, T1] = pts[idx - 1];
+                            const [t2, T2] = pts[idx];
+                            Tmin0 = T1 + (T2 - T1) * Math.log(t / t1) / Math.log(t2 / t1);
+                        }
+                        break;
+                   }
+                   case 'eggNewWhites88': {
+                        // FSIS limits: 141.5°F (18s) to 130.0°F (38.32 min = 2299.2s). Outside this is disallowed.
+                        if (t < 18 || t > 2299.2) {
+                            Tmin0 = Infinity;
+                            break;
+                        }
+                        // Valid regulatory data points: [time_in_seconds, temp_in_celsius]
+                        const pts = [
+                        [18, 60.83],     // 141.5 F
+                        [24, 60.56],     // 141.0 F
+                        [31, 60.28],     // 140.5 F
+                        [39, 60.00],     // 140.0 F
+                        [51, 59.72],     // 139.5 F
+                        [65, 59.44],     // 139.0 F
+                        [84, 59.17],     // 138.5 F
+                        [106.2, 58.89],  // 138.0 F (1.77 min * 60)
+                        [134.4, 58.61],  // 137.5 F (2.24 min * 60)
+                        [169.8, 58.33],  // 137.0 F (2.83 min * 60)
+                        [213.6, 58.06],  // 136.5 F (3.56 min * 60)
+                        [266.4, 57.78],  // 136.0 F (4.44 min * 60)
+                        [331.2, 57.50],  // 135.5 F (5.52 min * 60)
+                        [408.6, 57.22],  // 135.0 F (6.81 min * 60)
+                        [501.6, 56.94],  // 134.5 F (8.36 min * 60)
+                        [611.4, 56.67],  // 134.0 F (10.19 min * 60)
+                        [739.8, 56.39],  // 133.5 F (12.33 min * 60)
+                        [889.2, 56.11],  // 133.0 F (14.82 min * 60)
+                        [1061.4, 55.83], // 132.5 F (17.69 min * 60)
+                        [1257.0, 55.56], // 132.0 F (20.95 min * 60)
+                        [1477.2, 55.28], // 131.5 F (24.62 min * 60)
+                        [1723.2, 55.00], // 131.0 F (28.72 min * 60)
+                        [1996.2, 54.72], // 130.5 F (33.27 min * 60)
+                        [2299.2, 54.44]  // 130.0 F (38.32 min * 60)
+                        ];
+                        // Find the bounding interval for log-linear interpolation
+                        const idx = pts.findIndex(p => t <= p[0]);
+                        if (idx === 0) {
+                            Tmin0 = pts[0][1];
+                        } else {
+                            const [t1, T1] = pts[idx - 1];
+                            const [t2, T2] = pts[idx];
+                            Tmin0 = T1 + (T2 - T1) * Math.log(t / t1) / Math.log(t2 / t1);
+                        }
+                        break;
+                   }
+                   case 'eggNewWhites93': {
+                        // FSIS limits: 144.0°F (14s) to 127.5°F (36.45 min = 2187s). Outside this is disallowed.
+                        if (t < 14 || t > 2187) {
+                            Tmin0 = Infinity;
+                            break;
+                        }
+                        // Valid regulatory data points: [time_in_seconds, temp_in_celsius]
+                        const pts = [
+                        [14, 62.22],     // 144.0 F
+                        [17, 61.94],     // 143.5 F
+                        [19, 61.67],     // 143.0 F
+                        [23, 61.39],     // 142.5 F
+                        [26, 61.11],     // 142.0 F
+                        [30, 60.83],     // 141.5 F
+                        [35, 60.56],     // 141.0 F
+                        [41, 60.28],     // 140.5 F
+                        [48, 60.00],     // 140.0 F
+                        [56, 59.72],     // 139.5 F
+                        [65, 59.44],     // 139.0 F
+                        [75, 59.17],     // 138.5 F
+                        [87, 58.89],     // 138.0 F
+                        [101.4, 58.61],  // 137.5 F (1.69 min * 60)
+                        [118.8, 58.33],  // 137.0 F (1.98 min * 60)
+                        [138.0, 58.06],  // 136.5 F (2.30 min * 60)
+                        [160.8, 57.78],  // 136.0 F (2.68 min * 60)
+                        [187.8, 57.50],  // 135.5 F (3.13 min * 60)
+                        [219.0, 57.22],  // 135.0 F (3.65 min * 60)
+                        [255.0, 56.94],  // 134.5 F (4.25 min * 60)
+                        [297.6, 56.67],  // 134.0 F (4.96 min * 60)
+                        [346.8, 56.39],  // 133.5 F (5.78 min * 60)
+                        [404.4, 56.11],  // 133.0 F (6.74 min * 60)
+                        [471.0, 55.83],  // 132.5 F (7.85 min * 60)
+                        [549.6, 55.56],  // 132.0 F (9.16 min * 60)
+                        [640.8, 55.28],  // 131.5 F (10.68 min * 60)
+                        [747.0, 55.00],  // 131.0 F (12.45 min * 60)
+                        [894.6, 54.72],  // 130.5 F (14.91 min * 60)
+                        [1015.2, 54.44], // 130.0 F (16.92 min * 60)
+                        [1183.2, 54.17], // 129.5 F (19.72 min * 60)
+                        [1380.0, 53.89], // 129.0 F (23.00 min * 60)
+                        [1608.6, 53.61], // 128.5 F (26.81 min * 60)
+                        [1875.6, 53.33], // 128.0 F (31.26 min * 60)
+                        [2187.0, 53.06]  // 127.5 F (36.45 min * 60)
+                        ];
+                        // Find the bounding interval for log-linear interpolation
+                        const idx = pts.findIndex(p => t <= p[0]);
+                        if (idx === 0) {
+                            Tmin0 = pts[0][1];
+                        } else {
+                            const [t1, T1] = pts[idx - 1];
+                            const [t2, T2] = pts[idx];
+                            Tmin0 = T1 + (T2 - T1) * Math.log(t / t1) / Math.log(t2 / t1);
+                        }
+                        break;
+                   }
 				}
 				break;
 			}
@@ -1759,6 +2022,165 @@
 						case 'eggWholeSalt':  
 						case 'eggYolkSugar':  
 						case 'eggYolkSalt':	  tmin0=210*Math.pow(10,(146-(T*9/5+32))/8); break;
+                        case 'eggNewWhites78': {
+                            // Convert input Celsius to Fahrenheit for strict regulatory boundary checks
+                            const TF = T * 9/5 + 32;
+                            if (TF < 132.0 || TF > 141.5) {
+                                tmin0 = Infinity; // Invalid according to FSIS rules
+                                break;
+                            }
+                            // Reference points ordered by Temperature descending: [temp_in_celsius, time_in_seconds]
+                            const pts = [
+                             [60.83, 21], [60.56, 27], [60.28, 36], [60.00, 47], [59.72, 60],
+                             [59.44, 78], [59.17, 100.2], [58.89, 129], [58.61, 165], [58.33, 210.6],
+                             [58.06, 268.2], [57.78, 339], [57.50, 426.6], [57.22, 618], [56.94, 758.4],
+                             [56.67, 925.8], [56.39, 1123.8], [56.11, 1353.6], [55.83, 1621.2], [55.56, 1929.6]
+                            ];
+                            // Find the correct interval where the input temperature T falls between T1 and T2
+                            // Since arrays are descending, we find the first element whose temperature is <= T
+                            const idx = pts.findIndex(p => T >= p[0]);
+                            if (idx === 0) {
+                                tmin0 = pts[0][1];
+                            } else {
+                                const [T1, t1] = pts[idx - 1];
+                                const [T2, t2] = pts[idx];
+                                // Log-linear interpolation for time (thermal death time kinetics)
+                                tmin0 = t1 * Math.pow(t2 / t1, (T - T1) / (T2 - T1));
+                            }
+                            break;
+                        }
+                        case 'eggNewWhites82': {
+                            // Convert input Celsius to Fahrenheit for strict regulatory boundary checks
+                            const TF = T * 9/5 + 32;
+                            if (TF < 131.0 || TF > 141.5) {
+                                tmin0 = Infinity; // Invalid according to FSIS rules
+                                break;
+                            }
+                            // Reference points ordered by Temperature descending: [temp_in_celsius, time_in_seconds]
+                            const pts = [
+                             [60.83, 20], [60.56, 26], [60.28, 33], [60.00, 44], [59.72, 56],
+                             [59.44, 72], [59.17, 93], [58.89, 119.4], [58.61, 152.4], [58.33, 193.2],
+                             [58.06, 244.8], [57.78, 307.8], [57.50, 385.2], [57.22, 480], [56.94, 594],
+                             [56.67, 730.8], [56.39, 892.8], [56.11, 1084.8], [55.83, 1312.2], [55.56, 1567.2],
+                             [55.28, 1864.2], [55.00, 2202]
+                            ];
+                            // Find the correct interval where the input temperature T falls between T1 and T2
+                            // Since arrays are descending, we find the first element whose temperature is <= T
+                            const idx = pts.findIndex(p => T >= p[0]);
+                            if (idx === 0) {
+                                tmin0 = pts[0][1];
+                            } else {
+                                const [T1, t1] = pts[idx - 1];
+                                const [T2, t2] = pts[idx];
+                                // Log-linear interpolation for time (thermal death time kinetics)
+                                tmin0 = t1 * Math.pow(t2 / t1, (T - T1) / (T2 - T1));
+                            }
+                            break;
+                        }
+                        case 'eggNewWhites88': {
+                            // Convert input Celsius to Fahrenheit for strict regulatory boundary checks
+                            const TF = T * 9/5 + 32;
+                            if (TF < 130.0 || TF > 141.5) {
+                                tmin0 = Infinity; // Invalid according to FSIS rules
+                                break;
+                            }
+                            // Reference points ordered by Temperature descending: [temp_in_celsius, time_in_seconds]
+                            const pts = [
+                            [60.83, 18],     // 141.5 F
+                            [60.56, 24],     // 141.0 F
+                            [60.28, 31],     // 140.5 F
+                            [60.00, 39],     // 140.0 F
+                            [59.72, 51],     // 139.5 F
+                            [59.44, 65],     // 139.0 F
+                            [59.17, 84],     // 138.5 F
+                            [58.89, 106.2],  // 138.0 F
+                            [58.61, 134.4],  // 137.5 F
+                            [58.33, 169.8],  // 137.0 F
+                            [58.06, 213.6],  // 136.5 F
+                            [57.78, 266.4],  // 136.0 F
+                            [57.50, 331.2],  // 135.5 F
+                            [57.22, 408.6],  // 135.0 F
+                            [56.94, 501.6],  // 134.5 F
+                            [56.67, 611.4],  // 134.0 F
+                            [56.39, 739.8],  // 133.5 F
+                            [56.11, 889.2],  // 133.0 F
+                            [55.83, 1061.4], // 132.5 F
+                            [55.56, 1257.0], // 132.0 F
+                            [55.28, 1477.2], // 131.5 F
+                            [55.00, 1723.2], // 131.0 F
+                            [54.72, 1996.2], // 130.5 F
+                            [54.44, 2299.2]  // 130.0 F
+                            ];
+                            // Find the correct interval where the input temperature T falls between T1 and T2
+                            // Since arrays are descending, we find the first element whose temperature is <= T
+                            const idx = pts.findIndex(p => T >= p[0]);
+                            if (idx === 0) {
+                                tmin0 = pts[0][1];
+                            } else {
+                                const [T1, t1] = pts[idx - 1];
+                                const [T2, t2] = pts[idx];
+                                // Log-linear interpolation for time (thermal death time kinetics)
+                                tmin0 = t1 * Math.pow(t2 / t1, (T - T1) / (T2 - T1));
+                            }
+                            break;
+                        }
+                        case 'eggNewWhites93': {
+                            // Convert input Celsius to Fahrenheit for strict regulatory boundary checks
+                            const TF = T * 9/5 + 32;
+                            if (TF < 127.5 || TF > 144.0) {
+                                tmin0 = Infinity; // Invalid according to FSIS rules
+                                break;
+                            }
+                            // Reference points ordered by Temperature descending: [temp_in_celsius, time_in_seconds]
+                            const pts = [
+                            [62.22, 14],     // 144.0 F
+                            [61.94, 17],     // 143.5 F
+                            [61.67, 19],     // 143.0 F
+                            [61.39, 23],     // 142.5 F
+                            [61.11, 26],     // 142.0 F
+                            [60.83, 30],     // 141.5 F
+                            [60.56, 35],     // 141.0 F
+                            [60.28, 41],     // 140.5 F
+                            [60.00, 48],     // 140.0 F
+                            [59.72, 56],     // 139.5 F
+                            [59.44, 65],     // 139.0 F
+                            [59.17, 75],     // 138.5 F
+                            [58.89, 87],     // 138.0 F
+                            [58.61, 101.4],  // 137.5 F
+                            [58.33, 118.8],  // 137.0 F
+                            [58.06, 138.0],  // 136.5 F
+                            [57.78, 160.8],  // 136.0 F
+                            [57.50, 187.8],  // 135.5 F
+                            [57.22, 219.0],  // 135.0 F
+                            [56.94, 255.0],  // 134.5 F
+                            [56.67, 297.6],  // 134.0 F
+                            [56.39, 346.8],  // 133.5 F
+                            [56.11, 404.4],  // 133.0 F
+                            [55.83, 471.0],  // 132.5 F
+                            [55.56, 549.6],  // 132.0 F
+                            [55.28, 640.8],  // 131.5 F
+                            [55.00, 747.0],  // 131.0 F
+                            [54.72, 894.6],  // 130.5 F
+                            [54.44, 1015.2], // 130.0 F
+                            [54.17, 1183.2], // 129.5 F
+                            [53.89, 1380.0], // 129.0 F
+                            [53.61, 1608.6], // 128.5 F
+                            [53.33, 1875.6], // 128.0 F
+                            [53.06, 2187.0]  // 127.5 F
+                            ];
+                            // Find the correct interval where the input temperature T falls between T1 and T2
+                            // Since arrays are descending, we find the first element whose temperature is <= T
+                            const idx = pts.findIndex(p => T >= p[0]);
+                            if (idx === 0) {
+                                tmin0 = pts[0][1];
+                            } else {
+                                const [T1, t1] = pts[idx - 1];
+                                const [T2, t2] = pts[idx];
+                                // Log-linear interpolation for time (thermal death time kinetics)
+                                tmin0 = t1 * Math.pow(t2 / t1, (T - T1) / (T2 - T1));
+                            }
+                            break;
+                        }
 					}
 					break;
 			}
@@ -2318,7 +2740,7 @@
 				<td id="head" colspan="1">
 					<!-- NSRDEC Natick Logo -->
 					<img style="margin-top: 10px; margin-left: 40px" src="data:image/png;base64,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">
-                    <!-- QR code for http://vsilves.freeshell.org/calc.html -->
+                    <!-- QR code for https://vsilves.github.io/Calculator -->
 					<img width="80" height="80" style="margin-top: 10px;" src="data:image/png;base64,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">
 				</td>
 			</tr>
@@ -2340,7 +2762,7 @@
 
 <!-- TITLE, VERSION, AND COUNTER PANEL -->
 <div style='text-align:left'>
-	<strong><span id='paststerilspan'>Pasteurization</span> Calculation: </strong>Version 9.05 (3 February 2022)
+	<strong><span id='paststerilspan'>Pasteurization</span> Calculation: </strong>Version 9.06 (15 August 2026)
 	&nbsp;&nbsp;&nbsp;
 	<input type="text" name="freeFormInput" align="center" size='25'>
 	<img src="http://www.easycounter.com/counter.php?vsilves" border="0" alt="page counter" align="right">
@@ -2452,15 +2874,20 @@
 -->
 					  	<option value="upDairy">UP (dairy products)</option>
 					  	<option value="upOther">UP (all other products)</option>
-					  	<option value="eggWhites">egg, whites (plain)</option>
-						<option value="eggWhole">egg, whole (plain)</option>
+					  	<option value="eggWhites">egg, whites, plain (SE Negative Only)</option>
+						<option value="eggWhole">egg, whole, plain</option>
 						<option value="eggBlends">egg, whole, blends (&lt;2% added TS)</option>
 						<option value="eggWholeSugar">egg, whole, sugared (2-12% added TS)</option>
-						<option value="eggYolk">egg, yolk, (plain)</option>
+						<option value="eggYolk">egg, yolk, plain</option>
 						<option value="eggBlendsHigh">egg, whole, blends (2-12% added TS)</option>
 						<option value="eggWholeSalt">egg, whole, salted (&ge;2% added TS)</option>
 						<option value="eggYolkSugar">egg, yolk, sugared (&ge;2% added TS)</option>
 						<option value="eggYolkSalt">egg, yolk, salted (2-12% added TS)</option>
+
+                        <option value="eggNewWhites78">egg, whites, plain, pH 7.8 (5.7-log)</option>
+                        <option value="eggNewWhites82">egg, whites, plain, pH 8.2 (5.7-log)</option>
+                        <option value="eggNewWhites88">egg, whites, plain, pH 8.8 (5.7-log)</option>
+                        <option value="eggNewWhites93">egg, whites, plain, pH 9.3 (5.7-log)</option>
 					</select>
 					<button class="cool" onclick="clearAllInputs()" title="Click to clear all input data. Read the statement at the bottom for additional guidance on how to fill each entry.">Reset</button>
 				</td>
