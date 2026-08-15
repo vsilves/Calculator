@@ -1,5 +1,5 @@
 # Calculator
-This repository holds the US FDA validated and DOD approved dairy and fluid egg calculator developed by myself while working at NSRDEC.
+This repository holds the US FDA validated and DOD FREC approved dairy and fluid egg holding time calculator developed by myself while working at NSRDEC.
 
 Calculator Page served at the following URL:
 
